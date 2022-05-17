@@ -1,7 +1,6 @@
 import { useState } from 'react'
-
 import '../styles/tasklist.scss'
-
+// uuidv4();
 import { FiTrash, FiCheckSquare } from 'react-icons/fi'
 
 interface Task {
@@ -16,6 +15,15 @@ export function TaskList() {
 
   function handleCreateNewTask() {
     // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
+    if(newTaskTitle.trim() == "" || newTaskTitle.length == 0) {
+      console.log("Nenhuma Tarefa Preenchida");
+    }else {
+      setTasks(tasks.concat({ 
+        id: tasks.length + 1,
+        title: newTaskTitle,
+        isComplete: false,
+      }))
+    }
   }
 
   function handleToggleTaskCompletion(id: number) {
