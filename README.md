@@ -44,7 +44,7 @@ Com o Node instalado na máquina, vc precisa apenas de 2 comandos (no terminal) 
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../../challenges/React-To-do-list/LICENSE) para mais detalhes.
 
 ---
 
